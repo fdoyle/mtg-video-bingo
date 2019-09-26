@@ -1,0 +1,64 @@
+.board {
+    padding: 10px;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, fr);
+    gap: 10px;
+}
+
+
+.boardTile {
+    padding: 10%;
+    border-radius: 20%;
+    transition: 0.2s;
+}
+
+.unchecked {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.checked {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.boardTileTextContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+.unchecked:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.unchecked:hover {
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.checked:hover {
+    background-color: rgba(255,255,255,1);
+}
+
+.checked .boardTileText {
+    color: black;
+}
+
+.unchecked .boardTileText {
+    color: white;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 1);
+
+}
+
+.boardTileText {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 1.7vw;
+    font-weight: bold;
+}
+
