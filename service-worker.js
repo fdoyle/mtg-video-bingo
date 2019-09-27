@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/mtg-video-bingo/precache-manifest.7fa0c67c2b6ee5eb7fc6f07380903566.js"
+  "/mtg-video-bingo/precache-manifest.fbe504441b1612b012ee7243e9e225a1.js"
 );
 
 self.addEventListener('message', (event) => {
