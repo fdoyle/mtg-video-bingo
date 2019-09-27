@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/mtg-video-bingo/static/css/main.e621ba16.chunk.css",
+    "main.css": "/mtg-video-bingo/static/css/main.36de9c77.chunk.css",
     "main.js": "/mtg-video-bingo/static/js/main.288e23c1.chunk.js",
     "main.js.map": "/mtg-video-bingo/static/js/main.288e23c1.chunk.js.map",
     "runtime-main.js": "/mtg-video-bingo/static/js/runtime-main.71ca2f78.js",
@@ -8,9 +8,9 @@
     "static/js/2.870c94df.chunk.js": "/mtg-video-bingo/static/js/2.870c94df.chunk.js",
     "static/js/2.870c94df.chunk.js.map": "/mtg-video-bingo/static/js/2.870c94df.chunk.js.map",
     "index.html": "/mtg-video-bingo/index.html",
-    "precache-manifest.fbe504441b1612b012ee7243e9e225a1.js": "/mtg-video-bingo/precache-manifest.fbe504441b1612b012ee7243e9e225a1.js",
+    "precache-manifest.6ea5e6527b95071af736df8c0791455d.js": "/mtg-video-bingo/precache-manifest.6ea5e6527b95071af736df8c0791455d.js",
     "service-worker.js": "/mtg-video-bingo/service-worker.js",
-    "static/css/main.e621ba16.chunk.css.map": "/mtg-video-bingo/static/css/main.e621ba16.chunk.css.map",
-    "static/media/index.css": "/mtg-video-bingo/static/media/lighthouse.52ba0ee4.jpg"
+    "static/css/main.36de9c77.chunk.css.map": "/mtg-video-bingo/static/css/main.36de9c77.chunk.css.map",
+    "static/media/index.css": "/mtg-video-bingo/static/media/mtg-art.d4b2b144.jpg"
   }
 }
