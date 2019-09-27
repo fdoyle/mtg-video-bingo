@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "480a84d8f4db0772d53dcaa2b892b375",
+    "revision": "e99fb87331742e5381d25cad1808c6dd",
     "url": "/mtg-video-bingo/index.html"
   },
   {
-    "revision": "faf17835056bd808d853",
+    "revision": "0807a300e57d035214e8",
     "url": "/mtg-video-bingo/static/css/main.36de9c77.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mtg-video-bingo/static/js/2.870c94df.chunk.js"
   },
   {
-    "revision": "faf17835056bd808d853",
-    "url": "/mtg-video-bingo/static/js/main.288e23c1.chunk.js"
+    "revision": "0807a300e57d035214e8",
+    "url": "/mtg-video-bingo/static/js/main.a4038d71.chunk.js"
   },
   {
     "revision": "569e10db0646d64e4488",
