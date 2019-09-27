@@ -16,7 +16,7 @@ const Bingo: React.FC = () => {
 
   return (
     <div className="App">
-      <Router basename="/mtg-video-bingo">
+      <Router>
         <SetPicker sets={setTitles} />
         <h1>Bingo</h1>
         <Route path="/" exact render={() => <Board sets={sets} />} />
