@@ -29,6 +29,32 @@ Ultimate Masters:
   - Turn on the green screen and delete the video!
   - Inaccurate Price Estimates
 
+Ultimate Masters v2:
+  - Demonic Rudy
+  - Rudy's Ex
+  - Rudy Drops a Pack
+  - 10 minute video
+  - Life from the Loam
+  - Karn
+  - Noblest of Hierarchs
+  - Lili visits Rudy's parents basement
+  - Getting Trolled
+  - SNAPPY
+  - Flagstones of a Dollar
+  - Worst start in UMA history
+  - Just getting POUNDED in the face
+  - Through the Rudy
+  - Foil Foil
+  - Seizing My Day
+  - Three+ "Come on!"
+  - Best start in UMA history
+  - Turn on the green screen and delete the video
+  - The FLIPPING Lighthouse
+  - Old Man Rudy
+  - Nobody cares about your shoal
+  - Rudy's Brother
+  - Lavaclaw reach around
+
 Core Rudy:
   - moogic the goothering
   - "Creepy Rudy"
