@@ -2,51 +2,60 @@ import React from "react";
 import { BoardTile } from "./BoardTile";
 import './Board.css'
 import { number } from "prop-types";
+import { useParams } from "react-router";
+import { useState } from 'react';
 
 export type IProps = {
-
+    sets: any;
+    match?: any
 }
 
+export function Board(props: IProps) {
+    let rows: number = 5;
+    let columns: number = 5;
 
-export class Board extends React.Component<IProps, any>{
-    rows: number = 5;
-    columns: number = 5;
+    let init: boolean[] = []
+    const [currentBoardState, setBoardState] = useState(init)
+    let { slug } = useParams();
+    console.log(slug)
 
-    constructor(props: any) {
-        super(props);
-        this.state = {}
-
-    }
-
-    render() {
-        let boardTiles = []
-
-        for (let i = 0; i != 25; i++) {
-            let active = this.state.hasOwnProperty(i) && this.state[i] == true;
-            boardTiles.push(<BoardTile
-                key={i}
-                x={i % this.columns}
-                y={Math.floor(i / this.columns)}
-                index={i}
-                active={active}
-                onToggle={this.onToggle}
-                content={`this is item ${i} but it's really long so it takes up a bunch of space`} />)
-        }
-        return <div className="board">{boardTiles}</div>
-    }
-
-    onToggle = (index: number) => {
+    let onToggle = (index: number) => {
         let oldState = null
-        if (index in this.state && this.state[index] == true) {
+        if (index in currentBoardState && currentBoardState[index] == true) {
             oldState = true;
         } else {
             oldState = false;
         }
         let newState = !oldState
         console.log(`index ${index} new state ${newState}`)
-        console.log(this.state)
-        this.setState({ //state is just a map of indices to states. if a value exists, it's "on" otherwise off
-            [index]: newState
-        })
+        let updatedBoardState = [...currentBoardState]
+        updatedBoardState[index] = newState;
+        setBoardState(updatedBoardState)
     }
+
+    let boardTiles = []
+
+    let set = slug != undefined ? slug : "Core Rudy"
+    let content = Object.assign([], props.sets[set]);
+    for (let i = 0; i != 25; i++) {
+        let text: string = "";
+        if (i == 12) {
+            text = "Free Space"
+        } else {
+            let unsafeText = content.shift()
+            if (unsafeText != undefined) {
+                text = unsafeText;
+            }
+        }
+        let active = currentBoardState.hasOwnProperty(i) && currentBoardState[i] == true;
+        boardTiles.push(<BoardTile
+            key={i}
+            x={i % columns}
+            y={Math.floor(i / columns)}
+            index={i}
+            active={active}
+            onToggle={onToggle}
+            content={text} />)
+    }
+    return <div className="board">{boardTiles}</div>
 }

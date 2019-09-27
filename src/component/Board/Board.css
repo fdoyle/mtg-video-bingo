@@ -1,17 +1,15 @@
 .board {
     padding: 10px;
-    width: 80%;
-    height: auto;
+    max-width: 70vh;
+    margin-bottom: 0;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, fr);
-    gap: 10px;
 }
 
 
 .boardTile {
-    padding: 10%;
     border-radius: 20%;
     transition: 0.2s;
 }
@@ -41,7 +39,7 @@
 }
 
 .checked:hover {
-    background-color: rgba(255,255,255,1);
+    background-color: rgba(255, 255, 255, 1);
 }
 
 .checked .boardTileText {
@@ -58,7 +56,38 @@
     text-align: center;
     margin-top: 0px;
     margin-bottom: 0px;
-    font-size: 1.7vw;
+    font-size: 10px;
     font-weight: bold;
+    overflow: auto;
+    padding: 6%;
+    margin: 0 6%;
 }
 
+::-webkit-scrollbar {
+    width: 0px;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
+}
+
+@media screen and (min-width: 600px) {
+    .boardTileText {
+        font-size: 12px;
+    }
+
+    .board {
+        gap: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .boardTileText {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 1024) {
+    .boardTileText {
+        font-size: 18px;
+    }
+}

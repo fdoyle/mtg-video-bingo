@@ -1,6 +1,7 @@
 import React from "react";
 import './Board.css'
 import { AspectRatio } from "../AspectRatio/AspectRatio";
+import { Textfit } from 'react-textfit';
 
 export type IProps = {
     index: number;
@@ -24,7 +25,9 @@ export class BoardTile extends React.Component<IProps, IState>{
         return <div className={`boardTile " + ${this.props.active ? "checked" : "unchecked"}`} onClick={this.onClick}>
             <AspectRatio aspectRatio="100%">
                 <div className="boardTileTextContainer">
-                    <p className="boardTileText">{this.props.content}</p>
+                    <p className="boardTileText" >
+                        {this.props.content}
+                    </p>
                 </div>
             </AspectRatio>
         </div>

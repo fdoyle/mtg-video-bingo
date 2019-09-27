@@ -1,0 +1,25 @@
+.setList {
+    background-color: rgba(0,0,0,.5);
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.setItem {
+    float: left;
+    display: block;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.setItem  {
+    font-weight: bold;
+}
+
+.setItem:hover {
+    background-color: rgba(0,0,0,.5);
+}
